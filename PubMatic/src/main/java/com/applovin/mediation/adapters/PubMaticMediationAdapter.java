@@ -672,7 +672,8 @@ public class PubMaticMediationAdapter extends MediationAdapterBase implements Ma
 
                 @Override
                 public void onNativeAdClicked(@NonNull POBNativeAd pobNativeAd, @NonNull String s) {
-                    // No action required.
+                    log( "Native ad clicked" );
+                    maxNativeAdAdapterListener.onNativeAdClicked();
                 }
 
                 @Override
